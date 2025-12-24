@@ -33,3 +33,13 @@ Registers the global key combination <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kb
 ## Smart Paste (smart_paste.exe)
 
 Monitors the key combination <kbd>Ctrl</kbd>+<kbd>V</kbd> via a low-level keyboard hook. If the clipboard contains text or image data and the currently focused window is Windows Explorer, pressing this key combination will paste that data as a file into the current directory.
+
+# Credits
+
+<a href="https://www.flaticon.com/free-icons/screenshot" title="screenshot icons">Screenshot icons created by Hilmy Abiyyu A. - Flaticon</a>
+
+<a href="https://uxwing.com/file-icon">File</a> and <a href="https://uxwing.com/image-file-icon">image</a> icons are downloaded from <a href="https://uxwing.com">uxwing.com</a>.
+
+<a href="https://www.freepik.com/free-vector/folders-set-multiple-styles_222524092.htm">Folder</a> icon is created by <a href="https://www.freepik.com/author/juicy-fish">juicy_fish</a> and downloaded from <a href="https://www.freepik.com">www.freepik.com</a>.
+
+<a href=https://www.pngmart.com/image/292006/png/292005 target="_blank">Clipboard, Share, Copy, Paste, Organize PNG</a>
