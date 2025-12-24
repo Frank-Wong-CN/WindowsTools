@@ -10,8 +10,11 @@ After running a tool, you may find it running in the system tray. Right-click th
 > The following operations may or may not be flagged as suspicious by Anti-Virus or Anti-Cheat software. Use them at your own risk.
 >
 > `cmd-boss-key.exe` and `screenshot-boss-key.exe` use the `RegisterHotKey` API to register global key combinations.
+>
 > `smart_paste.exe` uses `SetWindowsHookEx(WH_KEYBOARD_LL, ..., GetModuleHandle(NULL), 0)` to monitor keyboard activity.
+>
 > `cmd-boss-key.exe` and `smart_paste.exe` use COM interfaces to retrieve the file system path of the currently focused Windows Explorer window.
+>
 > `screenshot-boss-key.exe` draws a topmost overlay window containing the current screenshot (created using `BitBlt`) and detects which window is under the cursor using `GetTopWindow`, `GetWindowLong`, `GetWindowRect`, `PtInRect`, `GetAncestor`, and `GetNextWindow`.
 >
 > I have used `cmd-boss-key.exe` and `screenshot-boss-key.exe` in several EAC-protected games and have seen no negative effects on my game account.
