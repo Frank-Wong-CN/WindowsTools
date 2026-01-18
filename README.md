@@ -34,6 +34,14 @@ Registers the global key combination <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kb
 
 Monitors the key combination <kbd>Ctrl</kbd>+<kbd>V</kbd> via a low-level keyboard hook. If the clipboard contains text or image data and the currently focused window is Windows Explorer, pressing this key combination will paste that data as a file into the current directory.
 
+## Encoding Converter (u8conv.exe)
+
+A command-line tool for automatic text encoding detection and conversion between major file encodings. Uses [uchardet](https://github.com/BYVoid/uchardet) to detect source encoding. Simply run `u8conv input output` to convert files to UTF-8, or specify custom encodings as needed. Use `-h` for usage details and `-l` to list all supported encodings. Note that if your console did not display the filename properly, it's probably because your current code page does not support the characters, but the conversion will continue to work.
+
+## Git Repo Clone & Archive (gitca.exe)
+
+A command-line tool for cloning and archiving git repositories using [libgit2](https://github.com/libgit2/libgit2) and [libzip](https://github.com/nih-at/libzip). Submodules are recursively cloned with infinite retry (which is why this tool existed in the first place: git just quits after the second failed attempt). Provide one or more repository URLs to archive each as `<author_name>/<repo_name>-git-<default_branch>-<cur_commit_date>-<cur_commit_hash>.zip`. EXISTING `<author_name>/<repo_name>` DIRECTORIES ARE AUTOMATICALLY REMOVED before cloning to ensure clean archives. LFS support is limited. For private repositories, configure your username and personal access token in `gitca.env`.
+
 # Credits
 
 <a href="https://www.flaticon.com/free-icons/screenshot" title="screenshot icons">Screenshot icons created by Hilmy Abiyyu A. - Flaticon</a>
