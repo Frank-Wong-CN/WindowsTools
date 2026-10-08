@@ -25,8 +25,8 @@ After running a tool, you may find it running in the system tray. Right-click th
 >
 > None of the tools make Internet connections to remote machines unless:
 >
-> 1. This repo explicitly stated the tool makes proactive Internet connections to any server.
-> 2. The user actively operated the tool to make Internet connections to a designated target.
+> 1. This repo explicitly states that the tool connects to a remote server without user action.
+> 2. The user explicitly instructs the tool to connect to a specified target over the Internet.
 
 ## Terminal Boss Key Utility (cmd-boss-key.exe)
 
