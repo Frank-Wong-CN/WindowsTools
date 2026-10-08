@@ -20,7 +20,13 @@ After running a tool, you may find it running in the system tray. Right-click th
 > I have used `cmd-boss-key.exe` and `screenshot-boss-key.exe` in several EAC-protected games and have seen no negative effects on my game account.
 
 > [!NOTE]
-> More than 50% of the code is AI-generated. I created these tools for personal efficiency improvements and to quickly resolve my own needs, rather than for polished production use.
+> More than 70% of the code is AI-generated. I created these tools for personal efficiency improvements and to quickly resolve my own needs, rather than for polished production use.
+> 
+>
+> None of the tools make Internet connections to remote machines unless:
+>
+> 1. This repo explicitly stated the tool makes proactive Internet connections to any server.
+> 2. The user actively operated the tool to make Internet connections to a designated target.
 
 ## Terminal Boss Key Utility (cmd-boss-key.exe)
 
@@ -41,6 +47,14 @@ A command-line tool for automatic text encoding detection and conversion between
 ## Git Repo Clone & Archive (gitca.exe)
 
 A command-line tool for cloning and archiving git repositories using [libgit2](https://github.com/libgit2/libgit2) and [libzip](https://github.com/nih-at/libzip). Submodules are recursively cloned with infinite retry (which is why this tool existed in the first place: git just quits after the second failed attempt). Provide one or more repository URLs to archive each as `<author_name>/<repo_name>-git-<default_branch>-<cur_commit_date>-<cur_commit_hash>.zip`. EXISTING `<author_name>/<repo_name>` DIRECTORIES ARE AUTOMATICALLY REMOVED before cloning to ensure clean archives. LFS support is limited. For private repositories, configure your username and personal access token in `gitca.env`.
+
+## Goodnotes 5 Converter (gnparse.exe)
+
+This is a CLI tool that converts Goodnotes 5 notebooks into open format (InkML) files, renders pages as PNG or SVG, and assembles PDFs. It preserves stroke geometry, colors, images, and page backgrounds, with support for text and erased strokes.
+
+## DiskTree (DiskTree.zip)
+
+DiskTree is a portable disk analyzer that scans local drives, folders, network shares, and SSH servers. Inspired by both WizTree and SquirrelDisk, it shows storage use through interactive sunburst charts, treemaps, directory trees, and file search. It imports and exports WizTree-compatible CSV files and compact WIDX snapshots through the interface or CLI. Backup comparison counts matching paths across snapshots and filters results by source or backup count.
 
 # Credits
 
